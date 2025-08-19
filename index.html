@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>兄弟生日大挑战</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="home">
+    <h1>🎉 给我最好的兄弟</h1>
+    <p>今天是你生日，但想拿到祝福？先过五关回忆杀！</p>
+    <p>准备好了吗？</p>
+    <button onclick="goToPuzzle(1)">👉 开始挑战</button>
+  </div>
+
+  <!-- 谜题模板（复制修改即可） -->
+  <div class="container puzzle" id="puzzle1" style="display:none;">
+  <img src="./assets/images/hyj.jpg" alt="hyj" class="photo" />
+    <h2>第一关：黄逸君生日</h2>
+    <p>黄逸君生日什么时候？</p>
+    <input type="text" id="answer1" placeholder="输入答案" />
+    <button onclick="checkAnswer(1)">提交答案</button>
+    <p class="feedback" id="feedback1"></p>
+  </div>
+
+  <div class="container puzzle" id="puzzle2" style="display:none;">
+  <img src="./assets/images/shj.jpg" alt="shj" class="photo" />
+    <h2>第二关：沈泓江生日</h2>
+    <p>沈泓江生日什么时候？</p>
+    <input type="text" id="answer2" placeholder="输入答案" />
+    <button onclick="checkAnswer(2)">提交答案</button>
+    <p class="feedback" id="feedback2"></p>
+  </div>
+
+  <div class="container puzzle" id="puzzle3" style="display:none;">
+  <img src="./assets/images/xn.jpg" alt="xn" class="photo" />
+    <h2>第三关：诺宝生日</h2>
+    <p>诺宝生日什么时候</p>
+    <input type="text" id="answer3" placeholder="输入答案" />
+    <button onclick="checkAnswer(3)">提交答案</button>
+    <p class="feedback" id="feedback3"></p>
+  </div>
+
+  <div class="container puzzle" id="puzzle4" style="display:none;">
+  <img src="./assets/images/all.jpg" alt="我们的合照" class="photo" />
+    <h2>第四关：深夜食堂的分别</h2>
+    <p>上次在深夜食堂一起吃饭是什么时候</p>
+    <input type="text" id="answer4" placeholder="输入答案" />
+    <button onclick="checkAnswer(4)">提交答案</button>
+    <p class="feedback" id="feedback4"></p>
+  </div>
+
+  <div class="container puzzle" id="puzzle5" style="display:none;">
+  <img src="./assets/images/qun.jpg" alt="群" class="photo" />
+    <h2>第五关：群名</h2>
+    <p>我们共同的群聊名字是什么？</p>
+    <small>（群名）</small>
+    <input type="text" id="answer5" placeholder="输入答案" />
+    <button onclick="checkAnswer(5)">提交答案</button>
+    <p class="feedback" id="feedback5"></p>
+  </div>
+
+  <!-- 最终奖励页 -->
+  <div class="container final" id="final" style="display:none;">
+    <h2>🎉 恭喜通关！生日快乐，兄弟！</h2>
+    <p>这些年，一起熬夜、一起犯傻、一起长大。</p>
+    <p>你是我最铁的兄弟，没有之一。</p>
+    <p>We, United, Forever</p>
+    
+    <div class="gift">
+      <h3>你的生日礼物已解锁：</h3>
+      <p>📍 晚上7点，老地方烧烤摊，我请客！（这瞎写的）</p>
+      <a href="https://www.google.com/maps/place/Monaco+Circuit/@43.7337204,7.4220884,18.75z/data=!4m15!1m8!3m7!1s0x12cdc26f7b3f8531:0x74f7784c3ac49cfc!2sMonaco!3b1!8m2!3d43.7384176!4d7.4246158!16zL20vMDR3NTg!3m5!1s0x12cdc3005bd9bc7f:0xc23c85e779aac89e!8m2!3d43.7341516!4d7.4217464!16zL20vMDM3a2Jx?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D">点击查看地图</a>
+    </div>
+
+    <div class="video-section">
+      <h3>还有视频环节：</h3>
+      <video controls width="100%" style="max-width: 500px; border-radius: 12px;">
+        <source src="./assets/videos/wow.mp4" type="video/mp4">
+        你的浏览器不支持视频播放（可替换为真实视频链接或本地文件）
+      </video>
+    </div>
+
+    <button onclick="restart()">再玩一次？</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1, h2, h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+input {
+  padding: 12px;
+  width: 80%;
+  max-width: 300px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+button {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff5252;
+  transform: translateY(-2px);
+}
+
+.feedback {
+  margin-top: 15px;
+  font-weight: bold;
+  min-height: 24px;
+}
+
+.gift {
+  margin: 20px 0;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+}
+
+.video-section {
+  margin-top: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+.photo {
+  width: 80%;           /* 图片宽度占容器的80% */
+  max-width: 500px;     /* 最大不超过500px */
+  height: auto;         /* 保持宽高比，防止变形 */
+  border-radius: 16px;
+  margin: 20px auto;    /* 居中，并上下留空 */
+  display: block;       /* 防止文字环绕 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
